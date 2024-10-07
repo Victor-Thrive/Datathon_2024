@@ -76,5 +76,5 @@ def save_as_csv(data, filename):
     writer.writeheader()
     writer.writerows(data)
 
-student_info_ = student_info(300)
+student_info_ = student_info(1800)
 save_as_csv(student_info_, './student_survey.csv')
