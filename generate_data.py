@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 from faker import Faker
 from random import choice
 import csv
@@ -160,4 +159,4 @@ def save_as_csv(data, filename):
 
 student_info_ = student_info(1800)
 save_as_csv(student_info_, './student_survey.csv')
->>>>>>> f27318ee5e275de4aa02f42a0a0d3945cc0426ae
+
