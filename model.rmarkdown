@@ -4,7 +4,9 @@ format: html
 editor: visual
 ---
 
+
 ## Datathon
+
 ```{r}
 library(reticulate)
 library(tidyverse)
@@ -188,17 +190,21 @@ best_model
 ```
 
 
+
 ## Fetching data from python script
+
 
 ```{python}
 
 
 ```
 
+
 The radius of the circle is `{python} radius`
 
 
 ## Data Preparation
+
 
 ```{r}
 #|code-fold: true
@@ -224,7 +230,9 @@ df<- read.csv("student_survey.csv",stringsAsFactors = TRUE) |>
 write.csv(df,"student_survey_data.csv")
 ```
 
+
 ## Data Preparation
+
 
 ```{r}
 #|warning: false
@@ -394,17 +402,21 @@ best_model
 
 ```
 
+
 =======
+
 ---
 title: "Datathon"
 format: html
 editor: visual
 ---
 
+
 ## Datathon
 
 
 ## Fetching data from python script
+
 
 ```{python}
 import os
@@ -420,10 +432,12 @@ print("Current Working Directory:", os.getcwd())
 
 ```
 
+
 The radius of the circle is `{python} radius`
 
 
 ## Data Preparation
+
 
 ```{r}
 #|code-fold: true
@@ -449,7 +463,9 @@ df<- read.csv("student_survey.csv",stringsAsFactors = TRUE) |>
 write.csv(df,"student_survey_data.csv")
 ```
 
+
 ## Data Preparation
+
 
 ```{r}
 #|warning: false
@@ -619,7 +635,9 @@ best_model
 
 ```
 
+
 ##EDA
+
 ```{r}
 library(gridExtra)
 library(ggplot2)
@@ -651,6 +669,7 @@ plots <- map(categorical_vars, ~ plot_bar(df, .x))
 # Display the plots in a grid layout
 gridExtra::grid.arrange(grobs = plots, ncol = 2)
 ```
+
 
 ## other
 Yes, you can use **R** to analyze projected changes in the frequency of heavy precipitation over West Africa. R provides a wide range of packages for handling climate and meteorological data, making it well-suited for this kind of analysis. Here are some steps and tools you could use:

@@ -31,7 +31,7 @@ test_data <- testing(df_split)
 train_data$result <- as.factor(train_data$result)
 test_data$result <- as.factor(test_data$result)
 
-# Preprocessing recipe
+# Pre-processing recipe
 recipe <- recipe(result ~ ., data = train_data) %>%
   step_dummy(all_nominal_predictors()) %>%  # Convert categorical to dummy variables
   step_zv(all_predictors())                   # Remove zero-variance predictors
